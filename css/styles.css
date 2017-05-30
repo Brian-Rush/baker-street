@@ -97,25 +97,14 @@ p {
   text-align: center;
 }
 
-.profile {
-  max-width: 49%;
-  float: left;
-}
 
-/*should go in media query for mobile*/
-.profile:nth-child(odd) {
-  margin-right: 2%;
-  border: solid 1px pink;
-}
+
 
 .profile img {
   width: 100%;
   border-radius: 7px;
 }
 
-.all-profiles {
-  width: 100%;
-}
 
 .footer {
   clear: both;
@@ -123,6 +112,22 @@ p {
 
 @media screen and (max-width: 600px) {
   font-family: Arial, serif;
+
+  .all-profiles {
+    width: 100%;
+  }
+
+  .profile {
+    max-width: 49%;
+    float: left;
+  }
+
+  /*should go in media query for mobile*/
+  .profile:nth-child(odd) {
+    margin-right: 2%;
+    border: solid 1px pink;
+  }
+
 }
 
 @media all and (min-width: 601px, max-width: 1300px) {
