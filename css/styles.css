@@ -92,9 +92,37 @@ p {
   border-bottom: 2px dotted #2d2d2d;
 }
 
-@media all and (max-width: 600px) {
-  font-family: Arial, serif;
+#first-name, #last-name {
+  text-transform: uppercase;
+  text-align: center;
+}
 
+.profile {
+  max-width: 49%;
+  float: left;
+}
+
+/*should go in media query for mobile*/
+.profile:nth-child(odd) {
+  margin-right: 2%;
+  border: solid 1px pink;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.all-profiles {
+  width: 100%;
+}
+
+.footer {
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  font-family: Arial, serif;
 }
 
 @media all and (min-width: 601px, max-width: 1300px) {
