@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+/* For testing only */
+/*
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+*/
+/* End for testing */
+
 body {
   background: #e7e7e7;
   font-family: 'Georgia', serif;
@@ -92,12 +105,32 @@ p {
   border-bottom: 2px dotted #2d2d2d;
 }
 
-#first-name, #last-name {
+.first-name, .last-name {
   text-transform: uppercase;
   text-align: center;
 }
 
+.first-name {
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 0.5px;
+  font-weight: lighter;
+}
 
+.last-name {
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+#rag {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+}
 
 
 .profile img {
@@ -105,13 +138,15 @@ p {
   border-radius: 7px;
 }
 
-
 .footer {
   clear: both;
+  font-size: 12px;
+  line-height: 1.9em;
 }
 
+
 @media screen and (max-width: 600px) {
-  font-family: Arial, serif;
+
 
   .all-profiles {
     width: 100%;
@@ -122,11 +157,35 @@ p {
     float: left;
   }
 
+  .last-name:nth-child(n+5) {
+    margin-bottom: -30px;
+  }
+  .profile:nth-child(n+5) {
+    /*background-color: tomato;*/
+    margin-bottom: -25px;
+  }
+
   /*should go in media query for mobile*/
   .profile:nth-child(odd) {
     margin-right: 2%;
-    border: solid 1px pink;
   }
+
+  .footer-div {
+    width: 100%;
+    position: relative;
+    margin-bottom: 65px;
+
+  }
+
+  #footer-ornament {
+    border-bottom: 1px solid #2d2d2d;
+  }
+
+  #footer-ornament img {
+    position: relative;
+    transform: translateY(65%);
+  }
+
 
 }
 
@@ -136,4 +195,10 @@ p {
 
 @media all and (min-width: 1301px) {
 
+}
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
 }
