@@ -29,18 +29,13 @@ a {
   text-decoration: none;
 }
 
-ul {
-  width: 100%;
-}
-
-
 li {
   font-family: 'Helvetica', Arial, serif;
   text-transform: uppercase;
   text-align: center;
   font-size: .65em;
   /*border-bottom: 1px solid darkgrey;*/
-  float: left;
+  /*float: left;*/
   width: 33%;
   list-style: none;
   padding-top: 10px;
@@ -84,6 +79,10 @@ p {
   line-height: 1.3em;
   width: 100%;
   text-align: center;
+}
+
+.column p:not(last-child) {
+  text-align: left;
 }
 
 #horiz {
@@ -157,6 +156,14 @@ p {
     float: left;
   }
 
+  ul {
+    width: 100%;
+  }
+
+  li {
+    float: left;
+  }
+
   .last-name:nth-child(n+5) {
     margin-bottom: -30px;
   }
@@ -186,11 +193,55 @@ p {
     transform: translateY(65%);
   }
 
+#logo-bg {
+  display: none;
+}
 
 }
 
-@media all and (min-width: 601px, max-width: 1300px) {
+@media screen and (min-width: 601px) and (max-width: 1300px) {
 
+  .logo {
+  position: relative;
+  top: 20px;
+  }
+
+  #logo-bg {
+  position: relative;
+  }
+
+  #wordmark {
+    position: absolute;
+    top: 105px;
+    left: 140px;
+  }
+
+  ul {
+    list-style: none;
+
+  }
+
+.logo-nav {
+  width: 279px;
+  float: left;
+}
+
+.column {
+  width: 70%;
+  float: right;
+  margin-top: 130px;
+}
+
+.profile {
+  max-width: 32%;
+  float: left;
+}
+
+.profile:nth-child(3n+2) {
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
 }
 
 @media all and (min-width: 1301px) {
