@@ -7,6 +7,8 @@
 body {
   background: #e7e7e7;
   font-family: 'Georgia', serif;
+  padding: 0 15px;
+  color: #2d2d2d;
 }
 
 a {
@@ -20,10 +22,10 @@ ul {
 
 
 li {
-  font-family: 'Helvetica', serif;
+  font-family: 'Helvetica', Arial, serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: .8em;
+  font-size: .65em;
   /*border-bottom: 1px solid darkgrey;*/
   float: left;
   width: 33%;
@@ -38,7 +40,6 @@ li hr {
 
 .nav {
   margin: 30px 10px 30px 10px;
-
 }
 
 .logo {
@@ -53,10 +54,46 @@ li hr {
   margin-bottom: 30px;
 }
 
+h2, #horiz {
+  font-family: 'Hoefler Text', 'Baskerville old face', Garamond, 'Times New Roman', serif;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+}
 
+h2 span {
+  font-style: italic;
+}
 
+p {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+  width: 100%;
+  text-align: center;
+}
+
+#horiz {
+  border-bottom: 1px solid #2d2d2d;
+  line-height: .1em;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+#victor {
+  background-color: #e7e7e7;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+#baskerville {
+  font-family: "Baskerville";
+  border-bottom: 2px dotted #2d2d2d;
+}
 
 @media all and (max-width: 600px) {
+  font-family: Arial, serif;
 
 }
 
